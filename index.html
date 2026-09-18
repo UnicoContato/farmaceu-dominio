@@ -39,10 +39,31 @@
 
       <nav class="nav" id="menu" data-menu>
         <a href="#sobre">Sobre</a>
+        <a href="#unidades">Unidades</a>
         <a href="#categorias">Categorias</a>
         <a href="#galeria">Galeria</a>
         <a href="#contato">Contato</a>
-        <a class="nav-action" href="https://wa.me/556436342170" target="_blank">chamar no whatsapp</a>
+        <div class="nav-whatsapp" data-whatsapp-menu>
+          <button
+            class="nav-action nav-whatsapp-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-whatsapp-options"
+            data-whatsapp-toggle
+          >
+            Chamar no WhatsApp
+          </button>
+          <div class="nav-whatsapp-menu" id="nav-whatsapp-options">
+            <a href="https://wa.me/5564996761175" target="_blank" rel="noopener">
+              <span>Matriz</span>
+              <strong>(64) 99676-1175</strong>
+            </a>
+            <a href="https://wa.me/5564999672170" target="_blank" rel="noopener">
+              <span>Filial</span>
+              <strong>(64) 99967-2170</strong>
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -77,8 +98,165 @@
           <span>escuta, empatia e respeito</span>
         </div>
         <div>
-          <strong>Loja 2</strong>
-          <span>Chapadão do Céu - GO</span>
+          <strong>2 unidades</strong>
+          <span>Matriz e filial em Chapadão do Céu</span>
+        </div>
+      </section>
+
+      <section class="section units" id="unidades">
+        <div class="section-copy">
+          <p class="eyebrow red">Unidades</p>
+          <h2>Matriz e filial com o mesmo cuidado de perto.</h2>
+          <p>
+            Consulte os dados cadastrais, endereço e canais de atendimento de cada
+            unidade da Farmaceu Drogaria em Chapadão do Céu.
+          </p>
+        </div>
+
+        <div class="unit-tabs" data-unit-tabs>
+          <div class="tab-list" role="tablist" aria-label="Unidades Farmaceu">
+            <button
+              class="tab-button is-active"
+              id="tab-matriz"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-matriz"
+              data-unit-tab="matriz"
+            >
+              Matriz
+            </button>
+            <button
+              class="tab-button"
+              id="tab-filial"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-filial"
+              data-unit-tab="filial"
+            >
+              Filial
+            </button>
+          </div>
+
+          <article
+            class="unit-panel is-active"
+            id="panel-matriz"
+            role="tabpanel"
+            aria-labelledby="tab-matriz"
+            data-unit-panel="matriz"
+          >
+            <img src="img/matriz 1.jpeg" alt="Fachada da matriz Farmaceu em Chapadão do Céu">
+            <div class="unit-info">
+              <p class="unit-label">Matriz - Farmaceu</p>
+              <h3>FARMACEU DROGARIA LTDA</h3>
+              <dl>
+                <div>
+                  <dt>CNPJ</dt>
+                  <dd>05.009.272/0001-76</dd>
+                </div>
+                <div>
+                  <dt>Nome fantasia</dt>
+                  <dd>Farmaceu</dd>
+                </div>
+                <div>
+                  <dt>Abertura</dt>
+                  <dd>03/04/2002</dd>
+                </div>
+                <div>
+                  <dt>Situação cadastral</dt>
+                  <dd>Ativa desde 03/11/2005</dd>
+                </div>
+                <div>
+                  <dt>Endereço</dt>
+                  <dd>
+                    R. Guavira Oeste, esq. c/ Av. Netuno Sul, 224,
+                    Quadra 33 Lote 08 Sala 04, Centro, Chapadão do Céu - GO,
+                    CEP 75828-000.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Telefone</dt>
+                  <dd><a href="tel:+556496084870">(64) 9608-4870</a></dd>
+                </div>
+                <div>
+                  <dt>E-mail</dt>
+                  <dd><a href="mailto:farmaceu1@outlook.com">farmaceu1@outlook.com</a></dd>
+                </div>
+                <div>
+                  <dt>Atividade principal</dt>
+                  <dd>Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas.</dd>
+                </div>
+              </dl>
+              <div class="unit-actions">
+                <a class="button primary" href="https://wa.me/5564996761175" target="_blank" rel="noopener">
+                  WhatsApp da matriz
+                </a>
+                <a
+                  class="button light"
+                  href="https://www.google.com/maps/search/?api=1&query=R.%20Guavira%20Oeste%20224%20Centro%20Chapadao%20do%20Ceu%20GO"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Ver no mapa
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="unit-panel"
+            id="panel-filial"
+            role="tabpanel"
+            aria-labelledby="tab-filial"
+            data-unit-panel="filial"
+            hidden
+          >
+            <img src="img/fachada-frontal.jpg" alt="Fachada da filial Drogarias Ultra Popular em Chapadão do Céu">
+            <div class="unit-info">
+              <p class="unit-label">Filial - Drogarias Ultra Popular</p>
+              <h3>FARMACEU DROGARIA LTDA</h3>
+              <dl>
+                <div>
+                  <dt>CNPJ</dt>
+                  <dd>05.009.272/0003-38</dd>
+                </div>
+                <div>
+                  <dt>Endereço</dt>
+                  <dd>
+                    Av. Dionéia Norte, esq. c/ Rua Jabuti Oeste, 112,
+                    Quadra 04 Lote 12, Jardim Acalanto, Chapadão do Céu - GO,
+                    CEP 75828-000.
+                  </dd>
+                </div>
+                <div>
+                  <dt>Telefone</dt>
+                  <dd><a href="tel:+556436342170">(64) 3634-2170</a></dd>
+                </div>
+                <div>
+                  <dt>E-mail</dt>
+                  <dd><a href="mailto:farmaceu1@outlook.com">farmaceu1@outlook.com</a></dd>
+                </div>
+                <div>
+                  <dt>Atividade principal</dt>
+                  <dd>Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas.</dd>
+                </div>
+              </dl>
+              <div class="unit-actions">
+                <a class="button primary" href="https://wa.me/5564999672170" target="_blank" rel="noopener">
+                  WhatsApp da filial
+                </a>
+                <a
+                  class="button light"
+                  href="https://www.google.com/maps/search/?api=1&query=Av.%20Dioneia%20Norte%20112%20Jardim%20Acalanto%20Chapadao%20do%20Ceu%20GO"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Ver no mapa
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -184,13 +362,34 @@
           </p>
         </div>
         <div class="contact-panel">
-          <a href="https://wa.me/556436342170" target="_blank">
-            <span>WhatsApp</span>
-            <strong>(64) 3634-2170</strong>
-            <div class="contact-panel">
-            <span>contato</span>
+          <a href="tel:+556436342170">
+            <span>Telefone</span>
             <strong>(64) 3634-2170</strong>
           </a>
+          <div class="whatsapp-card" aria-label="Atendimento pelo WhatsApp">
+            <span>WhatsApp</span>
+            <strong>Escolha a unidade</strong>
+            <div class="whatsapp-options">
+              <a
+                class="whatsapp-option"
+                href="https://wa.me/5564996761175"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>Matriz</span>
+                <strong>(64) 99676-1175</strong>
+              </a>
+              <a
+                class="whatsapp-option"
+                href="https://wa.me/5564999672170"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>Filial</span>
+                <strong>(64) 99967-2170</strong>
+              </a>
+            </div>
+          </div>
           <a href="mailto:farmaceu1@outlook.com">
             <span>E-mail</span>
             <strong>farmaceu1@outlook.com</strong>
@@ -220,7 +419,7 @@
     <footer class="footer">
       <div>
         <strong>FARMACEU DROGARIA LTDA</strong>
-        <span>CNPJ 05.009.272/0003-38</span>
+        <span>Matriz CNPJ 05.009.272/0001-76 | Filial CNPJ 05.009.272/0003-38</span>
       </div>
       <div>
         <span>&copy; <span data-year></span> Drogarias Ultra Popular</span>
@@ -234,8 +433,8 @@
       <p>
         Este site institucional apresenta informações de contato e localização da
         Farmaceu Drogaria LTDA. A seção de localização pode exibir um mapa
-        incorporado do Google Maps e os links de telefone, e-mail ou mapa podem
-        abrir os aplicativos correspondentes no seu dispositivo.
+        incorporado do Google Maps e os links de telefone, WhatsApp, e-mail ou
+        mapa podem abrir os aplicativos correspondentes no seu dispositivo.
       </p>
     </dialog>
 
